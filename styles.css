@@ -27,6 +27,21 @@ img {
     color: black;
     z-index: 1;
 }
+
+.prog-load {
+    background-color: red;
+    color: white;
+    z-index: 2;
+    width: 40%;
+    overflow: hidden;
+    left: 0
+}
+
+.prog-load-text {
+    width: 400px;
+    height: 100%;
+}
+
 .lightbox {
     position: fixed;
     top: 0;
@@ -83,19 +98,6 @@ img {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.prog-load {
-    background-color: red;
-    color: white;
-    z-index: 2;
-    width: 40%;
-    overflow: hidden;
-    left: 0
-}
-
-.prog-load-text {
-    width: 400px;
-    height: 100%;
-}
 .lightbox__open {
     padding: 10px 20px;
     font-size: 16px;
