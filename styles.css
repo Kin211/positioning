@@ -115,3 +115,58 @@ img {
 .lightbox__open:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-label {
+    display: block;
+    padding: 10px 15px;
+    background: lightgray;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-label::before {
+    content: '▶';
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 10px;
+    transition: transform 0.2s;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: white;
+    padding: 0 15px;
+}
+
+.accordion-input:checked + .accordion-label::before {
+    transform: rotate(90deg);
+}
+
+.accordion-input:checked ~ .accordion-content {
+    max-height: 500px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
